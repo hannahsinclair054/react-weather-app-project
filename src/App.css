@@ -4,9 +4,24 @@
 }
 
 .App footer {
-  font-size: 11px;
-  margin: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-family: monospace;
 }
+footer a {
+  color: #ffff;
+  text-decoration-line: none;
+}
+
+footer:hover a {
+  color: #fff;
+  text-decoration-line: underline;
+}
+
 .App {
   text-align: center;
   font-family: monospace;
@@ -175,23 +190,4 @@ p.tempDescribe {
 span.minTemp {
   color: rgb(109, 109, 109);
   font-weight: 600;
-}
-
-p.footer {
-  text-align: center;
-  font-size: 14px;
-  margin-bottom: 0;
-  margin-top: 5px;
-  color: #fff;
-  font-weight: 700;
-  font-family: monospace;
-}
-.footer a {
-  color: #ffff;
-  text-decoration-line: none;
-}
-
-.footer:hover a {
-  color: #fff;
-  text-decoration-line: underline;
 }
