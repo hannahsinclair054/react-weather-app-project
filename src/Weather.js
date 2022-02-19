@@ -3,7 +3,7 @@ import "./App.css";
 import "./weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
-
+import { Rings } from "react-loader-spinner";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -52,18 +52,18 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="WeatherApp">
-        <h1>Weather App</h1>
+        <h1 className="weatherAppTitle">Weather App</h1>
         {form}
         <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
     return (
-      <div className="container">
+      <div>
         <h1>Weather App</h1>
         {form}
         <section className="main">
-          <h1>Hi👋👋</h1>
+          <Rings color="#d46456" height={300} width={600} />
         </section>
       </div>
     );

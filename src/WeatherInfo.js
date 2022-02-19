@@ -8,7 +8,7 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       <section className="main">
         <section className="cityTemp">
-          <h2 className="Location">{props.data.city}</h2>
+          <h1 className="Location mb-2 mt-0">{props.data.city}</h1>
           <WeatherIcon code={props.data.icon} />
 
           <p className="tempToday">
