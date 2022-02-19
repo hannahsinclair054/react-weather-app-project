@@ -8,7 +8,7 @@ export default function App() {
         <footer>
           This project was coded by Hannah Sinclair and is{" "}
           <a
-            href="https://github.com/hannahsinclair054/final-react-weather-app"
+            href="https://github.com/hannahsinclair054/react-weather-app-project"
             target="_blank"
             rel="noreferrer"
           >
