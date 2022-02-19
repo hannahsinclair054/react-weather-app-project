@@ -50,7 +50,7 @@ footer:hover a {
   font-weight: bolder;
 }
 
-@media screen {
+@media (max-width: 300px) {
   .container {
     width: 70%;
   }
