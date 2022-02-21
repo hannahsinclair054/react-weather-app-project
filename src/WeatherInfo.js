@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
       <section className="main">
         <section className="cityTemp">
           <h1 className="Location mb-2 mt-0">{props.data.city}</h1>
-          <WeatherIcon code={props.data.icon} />
+          <WeatherIcon code={props.data.icon} size={80} />
 
           <p className="tempToday">
             <span className="todayTemp">

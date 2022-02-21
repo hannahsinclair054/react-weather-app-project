@@ -3,6 +3,7 @@ import "./App.css";
 import "./weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import { Rings } from "react-loader-spinner";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -12,6 +13,7 @@ export default function Weather(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      coord: response.data.coord,
       temp: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -55,6 +57,7 @@ export default function Weather(props) {
         <h1 className="weatherAppTitle">Weather App</h1>
         {form}
         <WeatherInfo data={weatherData} />
+        <WeatherForecast coord={weatherData.coord} />
       </div>
     );
   } else {
