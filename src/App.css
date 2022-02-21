@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-family: monospace;
-  max-width: 725px;
+  max-width: 825px;
   margin: 20px auto;
   padding: 10px 10px;
 }
@@ -36,7 +36,7 @@ h1 {
   margin-bottom: 0;
   margin-top: 5px;
   color: #fff;
-  font-weight: 700;
+
   font-family: monospace;
 }
 footer a {
@@ -44,10 +44,17 @@ footer a {
   text-decoration-line: none;
 }
 
-footer:hover a {
+.GitHub-Link:hover {
   color: #fff;
-  text-decoration-line: underline;
-  font-weight: bolder;
+  text-shadow: 0.5px 0.15px #fff;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+.Netlify-Link:hover {
+  color: #fff;
+  text-shadow: 0.5px 0.15px #fff;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
 }
 
 @media (max-width: 300px) {
