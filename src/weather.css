@@ -68,6 +68,7 @@ section.right {
   border: rgba(255, 255, 255, 0.315);
   background-color: rgb(255, 255, 255);
   box-shadow: 3px 3px 2px rgba(255, 255, 255, 0.315);
+  margin-top: 4px;
 }
 
 button {
@@ -148,66 +149,8 @@ p.tempDescribe {
   font-size: 17px;
 }
 
-@media (max-width: 300px) {
-  .weatherAppTitle {
-    font-size: 26px;
-  }
-
-  section.main {
-    max-width: 360px;
-    margin: 0px;
-  }
-  section.cityTemp {
-    margin-bottom: 0px;
-  }
-  section.info {
+@media (max-width: 400px) {
+  section .info {
     max-width: 100px;
-    margin-bottom: 0px;
-  }
-  section.right {
-    max-width: 130px;
-    margin-right: -10px;
-    margin-bottom: 0px;
-    margin-top: -60px;
-  }
-
-  .searchBar {
-    font-size: 14px;
-  }
-
-  .searchButton {
-    font-size: 14px;
-  }
-
-  .Location {
-    font-size: 25.8px;
-  }
-
-  .todayTemp {
-    font-size: 40px;
-  }
-  .tempUnitC {
-    top: -55px;
-    font-size: 16px;
-    left: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-  p.tempDescribe,
-  .date {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  h3.date {
-    font-size: 14px;
-  }
-  p.tempDescribe {
-    font-size: 13px;
-  }
-  .right p span {
-    font-size: 13px;
   }
 }
